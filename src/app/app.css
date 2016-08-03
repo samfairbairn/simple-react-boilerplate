@@ -1,0 +1,11 @@
+@import './constants/vars.css';
+$gutterOuter: 0;
+$gutterInner: 20px;
+
+.content,
+.somthing {
+	display: block;
+	margin: $gutterOuter;
+	padding: $gutterInner;
+	background: $color-primary;
+}

@@ -1,0 +1,28 @@
+$color-bg: black;
+$color-text: white;
+
+.default {
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid $color-bg;
+	background: color($color-bg l(20%));
+	color: $color-text;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	outline: none;
+	border-radius: 5px;
+
+	&:hover {
+		cursor: pointer;
+		background: $color-bg;
+	}
+}
+
+.selected {
+	composes: default;
+	border-width: 2px;
+}
+
+.disabled {
+	composes: default;
+	pointer-events: none;
+}

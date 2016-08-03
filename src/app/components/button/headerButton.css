@@ -1,0 +1,14 @@
+$color-bg: transparent;
+$color-text: white;
+
+.default {
+	composes: default from './button.css';
+	border: 1px solid $color-text;
+	background: color($color-bg l(20%));
+	color: $color-text;
+	float: right;
+
+	&:hover {
+		background: color($color-text a(20%));
+	}
+}

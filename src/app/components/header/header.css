@@ -1,0 +1,48 @@
+@import '../../constants/vars.css';
+$color-link: white;
+$color-link-hover: grey;
+
+.header {
+	display: block;
+	padding: 10px 40px;
+	height: 50px;
+	background: $color-secondary;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	height: 50px;
+	width: auto;
+}
+
+.headerRight {
+	display: flex;
+	align-items: center;
+}
+
+.list {
+	display: flex;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+
+	li {
+		list-style: none;
+		margin: 0 10px;
+		padding: 0;
+
+		a {
+			color: $color-link;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			font-weight: bold;
+			text-decoration: none;
+
+			&:hover {
+				color: $color-link-hover;
+			}
+		}
+
+	}
+}
